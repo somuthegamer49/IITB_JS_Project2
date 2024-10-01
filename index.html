@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <title>IITB</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="funcs">
+        <div class="wrappersearch">
+          <div class="searchdiv">
+            <input
+              onchange="searchData(event)"
+              class="search"
+              type="text"
+              placeholder="Search"
+            />
+          </div>
+          <h2>Chemical Supplies</h2>
+        </div>
+        <div class="mobile">
+          <div onclick="addData()">
+            <span class="material-symbols-outlined base-icons">
+              add_circle
+            </span>
+          </div>
+          <div class="move-down" onclick="moveDown()">
+            <span class="material-symbols-outlined base-icons">
+              arrow_downward
+            </span>
+          </div>
+          <div class="move-up" onclick="moveUp()">
+            <span class="material-symbols-outlined base-icons">
+              arrow_upward
+            </span>
+          </div>
+          <div onclick="deleteData()">
+            <span class="material-symbols-outlined base-trash"> delete </span>
+          </div>
+          <div onclick="refreshData()">
+            <span class="material-symbols-outlined base-icons"> refresh </span>
+          </div>
+          <div onclick="saveData()">
+            <span class="material-symbols-outlined base-icons"> save </span>
+          </div>
+        </div>
+      </div>
+      <div class="mobile"></div>
+      <div class="space"></div>
+      <div style="overflow-x: auto">
+        <table class="table-chem">
+          <thead>
+            <tr>
+              <th></th>
+              <th></th>
+              <th onclick="sortData(event)">Chemical Name</th>
+              <th onclick="sortData(event)">Vendor</th>
+              <th onclick="sortData(event)">Density</th>
+              <th onclick="sortData(event)">Viscosity</th>
+              <th onclick="sortData(event)">Packaging</th>
+              <th onclick="sortData(event)">Pack Size</th>
+              <th onclick="sortData(event)">Unit</th>
+              <th onclick="sortData(event)">Quantity</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>

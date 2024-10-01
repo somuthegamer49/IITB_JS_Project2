@@ -1,0 +1,22 @@
+-> Architecture
+	HTML, External CSS and a external Vanilla Javascript files
+-> How To Operate
+	Use the top right navigation menu to add,delete,save,move up and move down.
+	To edit, select checkbox, click on the table row and after editing click save button on top right corner
+-> How It is Designed
+	Data is array of objects with table column names as keys and their values. 15 data is added by default
+	Separate functions were used such as Add, Delete, Edit, Save, Move up and move down and onclick functions were associated with html
+	To select checkboxes, loops were run through table rows and columns and validations were done at the same time. (Refer code)
+	To add data, createElement was used to create separate elements and then they were appended to created rows and appended to tablebody. (Refer code)
+	To delete, No ids were used even in data. Indexes of foreach loops were used data was stored in seprate array and then matched with main data array.
+	Wherever it was matching, splice operation was used to remove them
+	To edit, checkboxes were selected, validations were made, and then if validations were true then added to main data array and displayed in table
+	Validations were done by running loops through table rows and columns. Data type of column was checked whether string or number. Accordingly, the validations, if true, added
+	to main data.( Refer code)
+	To move up and down, previous node element was selected from current and then appended after or before using inserBefore function in node javascript.(Refer code)
+	Sorting functions were made with string and numbers by using arrays.sort() functions and both ascending and descending logic was implemented. To sort click on table headers
+	Extra Search method also implemented to search data using the input field.
+	
+-> Key Points Extra
+	No external JS libraries were used. No bootstrap used. The application is both responsive and mobile and browser friendly. Media queries and css used
+	Please watch the video demonstration in a txt file in the github repo.

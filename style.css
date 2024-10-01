@@ -1,0 +1,92 @@
+.container{
+    width: 80%;
+    margin: 0 auto;
+}
+.table-chem{
+    width: 80%;
+    margin:0 auto;
+    color: rgb(107, 106, 106);
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+}
+.table-chem tbody tr td{
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+.table-chem tbody tr th{
+    text-align: center;
+    padding-top: 1.5vh;
+    padding-bottom: 1.5vh;
+}
+.space{
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+.table-chem tbody tr:hover{
+    background-color: aliceblue;
+}
+.funcs{
+    display: flex;
+    justify-content:flex-end;
+    width: 80%;
+    margin: 0 auto;
+    gap: 1rem;
+}
+.base-icons{
+    color:blue;
+    cursor: pointer;
+}
+.base-trash{
+    color: red;
+    cursor: pointer;
+}
+.base-icons:active{
+    color:rgb(107, 106, 106);
+    cursor: pointer;
+}
+.base-trash:active{
+    color: blue;
+    cursor: pointer;
+}
+.table-chem thead tr{
+    cursor: pointer;
+}
+.search{
+    width: 50%;
+}
+.mobile{
+    display: flex;
+    gap: 1rem;
+}
+.wrappersearch{
+    width: 80%;
+    margin: 0 auto;
+}
+@media only screen and (max-width: 1024px){
+    body{
+        font-size: x-small;
+    }
+    .container{
+        width: 100%;
+        font-size: x-small;
+    }
+    .funcs{
+        gap:1px;
+    }
+    .base-icons{
+        size: 2px;
+    }
+    .base-trash{
+        size: 2px;
+    }
+    .mobile{
+        display: flex;
+    }
+    .funcs{
+        display: block;
+    }
+    .wrappersearch{
+        width: 100%;
+    }
+}
